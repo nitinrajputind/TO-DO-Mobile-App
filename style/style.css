@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #F7F7F7;
+}
+/* navbar style */
+
+nav{
+    background-color: #FFFFFF;
+    font-size: 25px;
+    box-shadow: 0px 0px 10px 5px grey;
+    padding: 20px 0;
+}
+nav h1{
+    margin-left: 100px;
+}
+.blue{
+    color: #00A5EC;
+}
+.black{
+    color: #424242;
+}
+
+/* Add Btn Style  */
+
+.contanier{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    margin: 30px 100px 30px 0px;
+}
+.add-button p{
+    display: inline-block;
+    color: #424242;
+    margin-left: 10px;
+    
+}
+.add-button i{
+    color: #00a5ec;
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+}
+
+/* column style */
+.contanier-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    opacity: 1;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.col{
+    background-color: #FFFFFF;
+    width: 352px;
+    height: 360px;
+    border: 1px solid #ededed;
+    border-radius: 30px;
+   
+}
+.col:hover{
+    box-shadow: 0px 0px 10px 5px grey;
+}
+.content-layer{
+    text-align: start;
+    line-height: 30px;
+    margin-top: 30px;
+    position: relative;
+}
+.content-layer h4{
+    padding: 0 10px 20px 40px;
+    font-size: 22px;
+    color: #00A5EC;
+}
+.content-layer a{
+    text-decoration: none;
+}
+input{
+    width: 20px;
+    height: 20px;
+    margin: 20px 10px 0 30px ;
+}
+.textDelete{
+    text-decoration: line-through;
+    color: #C2C2C2;
+    position: absolute;
+    top: 68px;
+    
+}
+.Normal{
+    accent-color: #C2C2C2;
+}
+
+label{
+    font-size: 18px;
+}
+.textNormal{
+    color: #424242;
+    position: absolute;
+    top: 118px;
+}
+/* ====================================================================== */
+
+/* Style for Add task Page  */
+
+.blurContent{
+   filter: blur(3px);
+   background-color: #d5cfcf;
+
+}
+.addTask{
+    border: 1px solid #EDEDED;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.addTask:hover{
+    box-shadow: 0px 0px 20px 5px grey
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #404040;
+    padding: 20px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.top a{
+    text-decoration: none;
+    color: #404040;
+}
+#AddedTask{
+    width: 350px;
+    height: 30px;
+    padding: 8px;
+    background-color: #f7f7f7;
+}
+.btn{
+    background: #00A5EC ;
+    border: none;
+    color: white;
+    width: 180px;
+    height: 48px;
+    border-radius: 4px;
+    position: relative;
+    top: 60px;
+    left: 265px;
+
+}
+/* =============================================================================== */
+
+
+/* Newtask page style  */
+.button-icon{
+    text-align: center;
+    margin-top: 30px;
+}
+.backIcon{
+    font-size: 22px;
+    margin-right: 100px;
+}
+.button-icon a{
+    text-decoration: none;
+    color: #424242;
+}
+.backIcon i{
+font-size: 30px;
+}
+.add-button {
+    font-size: 22px;
+    margin-left: 100px;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.custom-col{
+    width: 500px;
+}
+
+/* Media Quries */
+
+/* Mobile View  */
+@media screen and (min-width:250px)and (max-width:450px){
+    .contanier{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .add-button p{
+        display: none;
+    }
+    nav h1{
+        margin-left: 12px;
+    }
+    .addTask{
+        width: 18rem;
+        height: 250px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #AddedTask{
+        width: 250px;
+        clear: both;
+    }
+    .btn{
+        width: 150px;
+        height: 48px;
+        position: absolute;
+        top: 175px;
+        left: 120px;
+    }
+    .hidden1{
+        display: none;
+    }
+
+    .add-button i {
+        color: #00a5ec;
+        font-size: 40px;
+        position: absolute;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .backIcon{
+        float: left;
+    }
+}
